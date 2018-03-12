@@ -8,8 +8,8 @@
 
 ## 1 - Installation
 ```
-git clone https://git.arkyan.com/arkyan/arkyan-beta-front
-cd arkyan-beta-front
+git clone https://github.com/pierrecabriere/react-scss-starter-kit.git
+cd react-scss-starter-kit
 npm install
 ```
 
