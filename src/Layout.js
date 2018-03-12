@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Navbar from 'components/Navbar'
+import Navbar from 'components/Navbar';
 
-import './styles.scss'
+import './styles.scss';
 
 export default opts => {
   const Layout = Component => class extends React.Component {
@@ -18,8 +18,8 @@ export default opts => {
 
   // make parameters
   if (typeof opts === 'function') {
-    return  Layout(opts)
+    return Layout(opts);
   }
 
-  return Component => Layout(Component)
+  return Component => Layout(Component);
 }

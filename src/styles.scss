@@ -1,5 +1,10 @@
 @import "~normalize.css/normalize.css";
+@import "~styles/utils";
+
+html {
+  font-size: 17px;
+}
 
 body {
-    font-size: 17px;
+  color: color(text);
 }

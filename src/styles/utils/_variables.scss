@@ -1,18 +1,28 @@
 // breakpoints
-$breakpoint_mobile: 400px;
-$breakpoint_tablet: 768px;
-$breakpoint_desktop: 1024px;
-$breakpoint_widescreen: 1280px;
+$breakpoints: (
+    mobile: 400px,
+    tablet: 768px,
+    desktop: 1024px,
+    widescreen: 1280px
+);
 
-// config
-$container-max-width: $breakpoint_desktop;
+@function breakpoint($breakpoint) {
+  @return map_get($breakpoints, $breakpoint)
+}
 
 // colors
-$white: #fff;
-$black: #000;
-$grey: #ddd;
-$grey-dark: darken($grey, 15%);
-$blue: blue;
+$colors: (
+    white: #fff,
+    black: #000
+);
+
+@function color($color) {
+  @return map_get($colors, $color)
+}
 
 // theme colors
-$primary: $blue;
+$theme-colors: (
+    text: color(black)
+);
+
+$colors: map_merge($colors, $theme-colors);
