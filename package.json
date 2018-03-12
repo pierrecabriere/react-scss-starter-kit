@@ -1,6 +1,6 @@
 {
   "name": "react-scss-starter-kit",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "homepage" : "A simple react boilerplate based on an ejected create-react-app",
   "author": "hello@pierrecabriere.fr",
   "dependencies": {
